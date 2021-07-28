@@ -1,0 +1,356 @@
+body{
+  width: fit-content;
+  height: fit-content;
+}
+.desktop-background{
+  position: relative;
+  width: 1335px;
+  height: 640px;
+}
+
+/* Slot-Machine */
+
+.slot-machine-app{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+	height: 500px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  visibility: visible;
+}
+
+       /* header */
+
+.app-header{
+  display: inline-flex;                       
+  align-items: center; 
+  width: auto;
+  height: 27px;
+  line-height: 27px;
+  background: linear-gradient(180deg,#0997ff,#0053ee 8%,#0050ee 40%,#06f 88%,#06f 93%,#005bff 95%,#003dd7 96%,#003dd7);
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px #0f1089;
+  box-shadow: inset -1px -1px #00138c, inset 1px 1px #0831d9, inset -2px -2px #001ea0, inset 2px 2px #166aee, inset -3px -3px #003bda, inset 3px 3px #0855dd;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 7px;
+  border-top: 1px solid #0831d9;
+  border-left: 1px solid #0831d9;
+  border-right: 1px solid #001ea0;
+  font-size: 15px;
+  user-select: none;
+  justify-content: space-between;
+}
+.img_text_app-header-wrapper{
+  display: inline-flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.img_app-header{
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+.app-header_button-wrapper{
+  display: inline-flex;
+  align-items: center;
+  margin-right: 6px;
+}
+.app-header_button{
+  border: none;
+  padding: 0 2px;
+  border-radius: 2px;
+  outline: none;
+  height: fit-content;
+  padding-top: 1px;
+}
+.app-header_button:hover{
+  box-shadow:0px 0px 7px #333 inset !important;
+  border-radius: 3px;
+}
+.app-header_button:active{
+  box-shadow:0px 0px 15px #333 inset !important;
+  border-radius: 3px;
+}
+#app-header_button-hide{
+  background: url('../assets/svg/icons/hide.svg');
+  min-width: 21px;
+  min-height: 21px;
+  margin-left: 2px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  box-shadow: none;
+  background-color: #0050ee;
+}
+#app-header_button-close{
+  background: url('../assets/svg/icons/close.svg');
+  min-width: 21px;
+  min-height: 21px;
+  margin-left: 2px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  box-shadow: none;
+  background-color: #0050ee;
+}
+
+       /* body */
+.app-body{
+  border-left: 3px solid #245edb;
+  border-right: 3px solid #001ea0;
+  border-bottom: 3px solid #001ea0;
+  height: 100%;
+  display: flex;
+  padding: 50px;  
+}
+    /* app inside the body */
+
+      /* app */
+.app-body_reels{
+  flex: 3 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reel{
+  overflow: hidden;
+  display: inline-flex;
+  width: 19%;
+  height: 100%;
+  border: 1px solid white;
+}
+.reel > .icons > img {
+  width: calc(100% + 6px);
+  margin: -3px 0 0 -3px;
+  height: auto;
+}
+.test_reel_img{
+  width: calc(100% + 6px);
+  margin: -3px 0 0 -3px;
+  height: auto;
+}
+
+      /* buttons */
+.app-body_buttons{
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.app-body_button{
+  margin: 30px 30px 30px 0;
+  text-decoration: none;
+  position: relative;
+  padding: 15px 30px;
+  overflow: hidden;
+  transition: 0.2s all;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.app-body_button span{
+  position: absolute;
+  display: block;
+}
+
+#app-body_button-start:hover{
+  background:#26a0da; color: #000;
+  box-shadow: 0px 0px 10px #26a0da, 0px 0px 40px#26a0da, 0px 0px 80px #26a0da;
+  transition-delay: 0.2s;
+}
+#app-body_button-start span:nth-child(1){
+  top: 0px;
+  left: -91%;
+  width: 100%;
+  height: 2px;
+  background: #26a0da;
+}
+#app-body_button-start:hover span:nth-child(1){
+  left:0%; 
+  transition: 0.3s; 
+}
+#app-body_button-start span:nth-child(3){
+  bottom: 0px;
+  right: -91%;
+  width: 100%;
+  height: 2px;
+  background: #26a0da;
+}
+#app-body_button-start:hover span:nth-child(3){
+  right:0%; 
+  transition: 0.3s; 
+}
+#app-body_button-start span:nth-child(2){
+  bottom: -70%;
+  right: 0%;
+  width: 2px;
+  FONT-WEIGHT: 100;
+  background: #26a0da;
+  height: 100%;
+}
+#app-body_button-start:hover span:nth-child(2){
+  bottom:0%; 
+  transition: 0.3s; 
+}
+#app-body_button-start span:nth-child(4){
+  top: -70%;
+  left: 0%;
+  width: 2px;
+  FONT-WEIGHT: 100;
+  background: #26a0da;
+  height: 100%;
+}
+#app-body_button-start:hover span:nth-child(4){
+  top:0%; 
+  transition: 0.3s; 
+}
+#app-body_button-start:active{
+  box-shadow: 0px 0px 5px #26a0da, 0px 0px 10px#26a0da, 0px 0px 25px #26a0da;
+  transition:0s;
+}
+
+#app-body_button-stop:hover{
+  background:#F4D03F;
+  color: #000;
+  box-shadow: 0px 0px 10px #F4D03F, 0px 0px 40px#F4D03F, 0px 0px 80px #F4D03F;
+  transition-delay: 0.2s;
+}
+#app-body_button-stop span:nth-child(1){
+  top: 0px;
+  left: -91%;
+  width: 100%;
+  height: 2px;
+  background: #F4D03F;
+}
+#app-body_button-stop:hover span:nth-child(1){
+  left:0%; 
+  transition: 0.3s; 
+}
+#app-body_button-stop span:nth-child(3){
+  bottom: 0px;
+  right: -91%;
+  width: 100%;
+  height: 2px;
+  background: #F4D03F;
+}
+#app-body_button-stop:hover span:nth-child(3){
+  right:0%; 
+  transition: 0.3s; 
+}
+#app-body_button-stop span:nth-child(2){
+  bottom: -70%;
+  right: 0%;
+  width: 2px;
+  FONT-WEIGHT: 100;
+  background: #F4D03F;
+  height: 100%;
+}
+#app-body_button-stop:hover span:nth-child(2){
+  bottom:0%; 
+  transition: 0.3s; 
+}
+#app-body_button-stop span:nth-child(4){
+  top: -70%;
+  left: 0%;
+  width: 2px;
+  FONT-WEIGHT: 100;
+  background: #F4D03F;
+  height: 100%;
+}
+#app-body_button-stop:hover span:nth-child(4){
+  top:0%; 
+  transition: 0.3s; 
+}
+#app-body_button-stop:active{
+  box-shadow: 0px 0px 5px #F4D03F, 0px 0px 10px#F4D03F, 0px 0px 25px #F4D03F;
+  transition:0s;
+}
+
+/* Footer */
+
+.footer-panel{
+  height: 40px;
+  background:linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #333 100%) center/cover no-repeat;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+       /* Start button */
+.footer_start-button{
+  display: inline-flex;
+  align-items: center;
+  background: radial-gradient(circle, #5eac56 0%, #3c873c 100%) center/cover no-repeat;
+  width: 100px;
+  height: 100%;
+  outline: none;
+  box-shadow: 0px 5px 10px #79ce71 inset;
+  border-radius: 0px 10px 12px 0px;
+  border: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: white;
+  text-shadow: 1px 1px #333;
+}
+.footer_start-button:hover{
+  box-shadow:0px 0px 3px #333 inset;
+}
+.footer_start-button:active{
+  box-shadow:0px 0px 15px #333 inset;
+}
+.img_start-button{
+  width: auto;
+  height: 80%;
+  pointer-events: none;
+}
+
+       /* Hidden app */
+.panel_hidden-app{
+  display: inline-flex;                       /*     ОЦЕНТРОВКА ПО ВЕРТИКАЛИ И ГОРИЗОНТАЛИ */
+  align-items: center;                        /*     ВНУТРИ ЭЛЕМЕНТА!                      */
+  vertical-align: top;
+  margin-top: 5px;
+  margin-left: 10px;
+  height: 80%; 
+  user-select: none;
+  font-size: 13px;
+  background: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 100%, #245edb 92%, #333 100%) center/cover no-repeat;
+  border: none;
+  outline: none;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 7px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 7px;
+  color: white;
+  border: 1px solid #001da052;
+}
+.panel_hidden-app:hover{
+  box-shadow:0px 0px 10px #333 inset;
+}
+.panel_hidden-app:active{
+  box-shadow:0px 0px 15px #333 inset;
+  background: none;
+  background-color: #001da052;
+}
+.img_hidden-app-button{
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+
+    /* Добавляем/убираем класс 'active' для кнопки hidden-app */
+.panel_hidden-app_active{
+  box-shadow:0px 0px 15px #333 inset;
+  background: none;
+  background-color: #001da052;
+}

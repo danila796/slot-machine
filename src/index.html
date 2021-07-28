@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Slot Machine</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="desktop-background" style="background-image: url('assets/backgorund/windows-xp-desktop-background.jpg');">
+    <div class="slot-machine-app">
+      <div class="app-header">
+        <div class="img_text_app-header-wrapper">
+          <img class="img_app-header" src="assets/svg/icons/slot-machine_app-icon.svg">
+          Slot Machine App
+        </div>
+        <div class="app-header_button-wrapper">
+
+          <button type="button" class="app-header_button" id="app-header_button-hide" onclick="hideApp()"></button>
+          <button type="button" class="app-header_button" id="app-header_button-close" onclick="closeApp()"></button>
+          
+        </div>  
+      </div>
+      <div class="app-body" style="background-image: url('assets/backgorund/app-body_background.jpg');">
+        <div class="app-body_reels">
+          <div class="reel">
+            <!-- <img class="test_reel_img" src="pictures/svg/slots/apple.svg"> -->
+          </div>
+          <div class="reel"></div>
+          <div class="reel"></div>
+          <div class="reel"></div>
+          <div class="reel"></div>
+        </div>
+        <div class="app-body_buttons">
+          <a class="app-body_button"  id="app-body_button-start" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Start            
+          </a>    
+          <a class="app-body_button" id="app-body_button-stop" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Stop            
+          </a>
+        </div>
+      </div>  
+    </div>
+    <div class="footer-panel">
+      <button type="button" class="footer_start-button" onclick="openApp()">
+        <img class="img_start-button" src="assets/backgorund/windows_start-button.png">
+        Start
+      </button>
+      <button type="button" class="panel_hidden-app panel_hidden-app_active" onclick="toggleAppVisibility()">
+        <img class="img_hidden-app-button" src="assets/svg/icons/slot-machine_app-icon.svg">
+        Slot Machine App
+      </button>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+  <script type="module" src="js/index2.js"></script>
+</body>
+</html>
